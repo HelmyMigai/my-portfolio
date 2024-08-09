@@ -1,10 +1,91 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Personal Portfolio</title>
 </head>
+
 <body>
-    
+    <section id="about">
+        <h1>Hi, I'm Helmy Migai</h1>
+        <p>I'm a Full Stack Software Engineer based in Nairobi, Kenya, specializing in creating dynamic and responsive
+            web
+            applications. With over five years of experience in front-end development, I have a passion for optimizing
+            websites for speed, scalability, and SEO performance.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Wasichana Wetu Wafaulu Platform</h3>
+            <p>Managed the technical infrastructure and led the development of a platform that streamlined project
+                coordination for GEC Kenya, enhancing communication and tracking outcomes for over 1,000 schools.</p>
+            <a href="#" target="_blank">View Live</a> | <a href="#" target="_blank">View Code</a>
+        </div>
+        <div class="project">
+            <h3>DewCis Solutions Web Application</h3>
+            <p>During my internship, I contributed to the development of a web application that improved client service
+                delivery by integrating cloud computing and data analytics.</p>
+            <a href="#" target="_blank">View Live</a> | <a href="#" target="_blank">View Code</a>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Front-End Development: HTML, CSS (SCSS), JavaScript, TypeScript</li>
+            <li>Frameworks: React, Angular</li>
+            <li>Cloud Computing: AWS, Office 365</li>
+            <li>Project Management: Agile Methodologies, Jira, Confluence</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Let's work together! I'm always open to new opportunities and collaborations. Feel free to reach out to me
+            via
+            email, phone, or LinkedIn.</p>
+        <form action="mailto:helmymigai@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: <a href="mailto:helmymigai@gmail.com">helmymigai@gmail.com</a></p>
+        <p>Phone: +254705164508</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/helmy-migai-79434830b" target="_blank">Helmy Migai</a></p>
+    </section>
+    <section id="blog">
+        <h2>Blog/Case Studies</h2>
+        <div class="post">
+            <h3>Optimizing Web Performance for E-commerce Platforms</h3>
+            <p>A deep dive into how I improved load times and SEO rankings for an e-commerce website using React and
+                server-side rendering.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="post">
+            <h3>Case Study: Implementing Agile Methodologies in Remote Teams</h3>
+            <p>An exploration of how Agile practices enhanced collaboration and productivity during my role as a
+                Technical
+                Project Coordinator.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Coded by
+            <a href="https://github.com/HelmyMigai" target="_blank">Helmy Migai</a> and is
+            <a href="https://github.com/HelmyMigai/my-portfolio" target="_blank"> on GitHub</a> and
+            <a href="https://helmymigai.netlify.app/" target="_blank">hosted on Netlify</a>
+        </p>
+    </footer>
+
 </body>
+<script src="src/index.js"></script>
+
 </html>
