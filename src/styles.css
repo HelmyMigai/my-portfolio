@@ -171,20 +171,69 @@ form textarea {
   font-family: inherit;
 }
 
-form button {
-  padding: 15px 30px;
+/* Button Styles */
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background: linear-gradient(135deg, #4dc7d9 0%, #66a6ff 100%);
+  color: white;
+  padding: 0.8em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  background-color: #ff6f61;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-form button:hover {
-  background-color: #e65c50;
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+  margin-left: 0.6em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  transition: all 0.3s ease-in-out;
+}
+
+button .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+  transform: rotate(45deg);
+}
+
+button .svg-wrapper-1 {
+  display: flex;
+  align-items: center;
 }
 
 /* Footer */
